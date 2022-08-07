@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     dnsutils \
     iputils-ping \
-    python3.9* \
+    python3.9* && \
     rm -rf /var/lib/apt/lists/*
 
 # Generate enviorerment
@@ -45,7 +45,7 @@ RUN cd /usr/bin && \
 #    pip3 install git+https://github.com/kokarare1212/librespot-python
     
 # Installing Bot
-RUN pip3 install scdlbot && \
+RUN pip3 install scdlbot
     
 WORKDIR /data
 
