@@ -33,6 +33,10 @@ ADD runbot.sh /etc/service/bot/run
 ADD scripts /etc/scripts/
 ADD .env /data/
 
+# make the scripts runabale
+RUN chmod +x /etc/service/bot/run
+    #&& \ chmod +x /etc/my_init.d/importenv.sh && \
+
 # Change python3 to python3.9
 RUN cd /usr/bin && \
     rm -r python3 && \
