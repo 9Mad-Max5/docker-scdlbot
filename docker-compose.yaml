@@ -1,0 +1,11 @@
+version: '3.0'
+services:
+  deezloader:
+    image: 9madmax5/scdlbot
+    container_name: scdlbot
+    environment: 
+      TG_BOT_TOKEN: your-bot-token
+      STORE_CHAT_ID: sotrage-for-inline
+    volumes:
+      - /path/to/data:/data
+      - /path/to/songs:/songs
