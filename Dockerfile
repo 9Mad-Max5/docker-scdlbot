@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ADD runbot.sh /etc/service/bot/run
 #ADD importenv.sh /etc/my_init.d/
 ADD scripts /etc/scripts/
-ADD .env /data/
+ADD .env /data/.env
 
 # make the scripts runabale
 RUN chmod +x /etc/service/bot/run && \
