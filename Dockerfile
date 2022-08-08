@@ -19,8 +19,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     dnsutils \
     iputils-ping \
-    python3.9* && \
-    rm -rf /var/lib/apt/lists/*
+    python3.9* \
+    crudini && rm -rf /var/lib/apt/lists/*
 
 # Generate enviorerment
 #RUN mkdir /etc/service/bot && \
