@@ -50,7 +50,8 @@ RUN cd /usr/bin && \
 #    pip3 install git+https://github.com/kokarare1212/librespot-python
     
 # Installing Bot
-RUN pip3 install scdlbot
+RUN pip3 install scdlbot && \
+    pip3 install scdl --upgrade
     
 WORKDIR /data
 
